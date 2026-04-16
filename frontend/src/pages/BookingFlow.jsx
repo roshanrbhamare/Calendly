@@ -53,9 +53,16 @@ export default function BookingFlow() {
     };
 
     useEffect(() => {
+        console.log('📖 BookingFlow - Loading event with slug:', slug);
         api.get(`/event-types/${slug}`)
-            .then(res => setEventType(res.data))
-            .catch(console.error);
+            .then(res => {
+                console.log('✅ Event loaded:', res.data);
+                setEventType(res.data);
+            })
+            .catch(err => {
+                console.error('❌ Failed to load event:', err.response?.status, err.response?.data || err.message);
+                alert(`Failed to load event: ${err.response?.data?.error || err.message}`);
+            });
     }, [slug]);
 
     useEffect(() => {
