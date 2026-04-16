@@ -1,4 +1,4 @@
-# 📅 Scaler Scheduling Platform
+# 📅 Calendly Scheduling Platform
 
 A full-stack meeting scheduling platform inspired by **Calendly**. Hosts can create event types, set availability windows, and share public booking links. Guests book time slots directly — no account needed — and both parties receive automated email notifications.
 
