@@ -1,0 +1,70 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: [
+        "./index.html",
+        "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+    darkMode: "class",
+    theme: {
+        extend: {
+            colors: {
+    "surface-container-lowest": "var(--color-surface-container-lowest)",
+    "on-error-container": "var(--color-on-error-container)",
+    "tertiary-fixed-dim": "var(--color-tertiary-fixed-dim)",
+    "primary-fixed": "var(--color-primary-fixed)",
+    "surface-dim": "var(--color-surface-dim)",
+    "surface-container-high": "var(--color-surface-container-high)",
+    "on-tertiary-container": "var(--color-on-tertiary-container)",
+    "on-secondary": "var(--color-on-secondary)",
+    "primary-fixed-dim": "var(--color-primary-fixed-dim)",
+    "on-primary-container": "var(--color-on-primary-container)",
+    "outline-variant": "var(--color-outline-variant)",
+    "tertiary-container": "var(--color-tertiary-container)",
+    "on-surface-variant": "var(--color-on-surface-variant)",
+    "on-tertiary-fixed-variant": "var(--color-on-tertiary-fixed-variant)",
+    "background": "var(--color-background)",
+    "on-error": "var(--color-on-error)",
+    "on-surface": "var(--color-on-surface)",
+    "error-container": "var(--color-error-container)",
+    "on-tertiary-fixed": "var(--color-on-tertiary-fixed)",
+    "on-primary": "var(--color-on-primary)",
+    "surface": "var(--color-surface)",
+    "on-primary-fixed-variant": "var(--color-on-primary-fixed-variant)",
+    "surface-container-low": "var(--color-surface-container-low)",
+    "secondary-container": "var(--color-secondary-container)",
+    "inverse-surface": "var(--color-inverse-surface)",
+    "surface-variant": "var(--color-surface-variant)",
+    "surface-tint": "var(--color-surface-tint)",
+    "tertiary": "var(--color-tertiary)",
+    "secondary-fixed": "var(--color-secondary-fixed)",
+    "secondary": "var(--color-secondary)",
+    "on-primary-fixed": "var(--color-on-primary-fixed)",
+    "on-secondary-container": "var(--color-on-secondary-container)",
+    "tertiary-fixed": "var(--color-tertiary-fixed)",
+    "primary": "var(--color-primary)",
+    "on-secondary-fixed-variant": "var(--color-on-secondary-fixed-variant)",
+    "surface-container": "var(--color-surface-container)",
+    "surface-bright": "var(--color-surface-bright)",
+    "on-secondary-fixed": "var(--color-on-secondary-fixed)",
+    "on-background": "var(--color-on-background)",
+    "on-tertiary": "var(--color-on-tertiary)",
+    "error": "var(--color-error)",
+    "surface-container-highest": "var(--color-surface-container-highest)",
+    "inverse-on-surface": "var(--color-inverse-on-surface)",
+    "secondary-fixed-dim": "var(--color-secondary-fixed-dim)",
+    "primary-container": "var(--color-primary-container)",
+    "outline": "var(--color-outline)",
+    "inverse-primary": "var(--color-inverse-primary)"
+            },
+            fontFamily: {
+                "headline": ["Plus Jakarta Sans", "sans-serif"],
+                "body": ["Inter", "sans-serif"],
+                "label": ["Plus Jakarta Sans", "sans-serif"]
+            }
+        },
+    },
+    plugins: [
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/container-queries')
+    ],
+}
